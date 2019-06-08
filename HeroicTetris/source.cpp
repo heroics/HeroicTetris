@@ -260,7 +260,7 @@ int main()
         // Draw Score
         swprintf_s(&screen[2 * screenWidth + playingFieldWidth + 6], 16, L"SCORE: %8d", gameScore);
         // If I get a line clear it out.
-        if (linesVector.empty())
+        if (!linesVector.empty())
         {
             // Display Frame
             WriteConsoleOutputCharacter(console, screen, playingFieldWidth * playingFieldHeight, {0, 0}, &bytesWritten);
