@@ -119,9 +119,11 @@ int main()
     int currentRotation = 0;
     int currentX = playingFieldWidth / 2;
     int currentY = 0;
+
     // Game Speed
     int gameSpeed = 20;
     int gameSpeedCounter = 0;
+
     // latch for rotate 'Z' key
     bool forcePieceDown = false;
     bool rotateHold = true;
